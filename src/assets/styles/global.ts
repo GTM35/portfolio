@@ -14,6 +14,23 @@ export const bodyMD = styled.a`
   font-family: "Roboto Mono", serif;
   font-size: 16px;
   font-weight: 400;
+  color: ${colors.elegance50};
+`;
+
+export const bodyXXL = styled.p`
+  font-family: "Roboto Mono", serif;
+  font-size: 36px;
+  line-height: 150%;
+  color: ${colors.elegance50};
+  font-weight: 400;
+`;
+
+export const bodyXL = styled.p`
+  font-family: "Roboto Mono", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 150%;
+  color: ${colors.elegance50};
 `;
 
 export const GlobalStyle = createGlobalStyle`

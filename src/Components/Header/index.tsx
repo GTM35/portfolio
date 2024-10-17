@@ -3,7 +3,7 @@ import { HeaderNav, Nav, Menu, MenuItem, MenuLink, Logo } from "./style";
 const Header = () => {
   return (
     <HeaderNav>
-      <Logo src="../../src/assets/images/logo2.png" alt="LOGO" />
+      <Logo src="../../src/assets/images/logo.png" alt="LOGO" />
       <Nav>
         <Menu>
           <MenuItem>
