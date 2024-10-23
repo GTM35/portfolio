@@ -1,4 +1,5 @@
 import { GlobalStyle } from "./assets/styles/global";
+import About from "./Components/About";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 
@@ -8,6 +9,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Hero />
+      <About />
     </div>
   );
 }

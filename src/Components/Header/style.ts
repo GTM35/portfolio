@@ -29,7 +29,7 @@ export const MenuLink = styled(bodyMD).attrs({ as: "a" })`
   &:hover {
     color: ${colors.modern500};
     border-bottom: 2px solid ${colors.modern500};
-    transition: color 0.5s ease;
+    transition: color 0.5s ease-out;
   }
 `;
 

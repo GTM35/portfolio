@@ -33,6 +33,22 @@ export const bodyXL = styled.p`
   color: ${colors.elegance50};
 `;
 
+export const headingXXL = styled.h2`
+  font-family: "Roboto Condensed", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 120%;
+  color: ${colors.elegance50};
+`;
+
+export const headingSM = styled.p`
+  font-family: "Roboto Condensed", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: ${colors.elegance50};
+`;
+
 export const GlobalStyle = createGlobalStyle`
     *   {
         margin:0;
