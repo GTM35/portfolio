@@ -8,4 +8,6 @@ export const LineSeparator = styled.div`
     rgba(47, 157, 255, 1) 40%,
     rgba(28, 94, 153, 0) 100%
   );
+
+  margin-bottom: 40px;
 `;

@@ -2,6 +2,7 @@ import { ContainerTag, TextTag } from "./style";
 
 type Props = {
   text: string;
+  typeTag: "default" | "solid";
 };
 
 const Tag = ({ text }: Props) => {

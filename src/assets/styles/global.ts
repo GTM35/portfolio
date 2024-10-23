@@ -33,6 +33,14 @@ export const bodyXL = styled.p`
   color: ${colors.elegance50};
 `;
 
+export const bodySM = styled.p`
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 14px;
+  color: ${colors.elegance50};
+`;
+
 export const headingXXL = styled.h2`
   font-family: "Roboto Condensed", serif;
   font-size: 36px;
@@ -46,6 +54,14 @@ export const headingSM = styled.p`
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
+  color: ${colors.elegance50};
+`;
+
+export const headingLG = styled.h3`
+  font-family: "Roboto Condensed", serif;
+  font-size: 23px;
+  line-height: 120%;
+  font-weight: 400;
   color: ${colors.elegance50};
 `;
 

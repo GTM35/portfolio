@@ -14,7 +14,6 @@ export const AboutWrapper = styled.div`
 
 export const AboutTitle = styled(headingXXL)`
   font-weight: bold;
-  margin-top: 40px;
 `;
 
 export const AboutInformation = styled.div`
