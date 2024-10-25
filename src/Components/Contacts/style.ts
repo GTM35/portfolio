@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { bodyMD, headingLG, headingXXL } from "../../assets/styles/global";
 
 export const ContainerContacts = styled.div`
-  margin-bottom: 300px;
   display: flex;
   gap: 127px;
 `;
