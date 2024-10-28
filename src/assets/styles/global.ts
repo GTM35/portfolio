@@ -9,6 +9,11 @@ export const colors = {
   modern600: "#DD7319",
 };
 
+export const breakpoint = {
+  desktop: "1024px",
+  tablet: "768px",
+};
+
 export const bodyMD = styled.a`
   line-height: 150%;
   font-family: "Roboto Mono", serif;
@@ -77,5 +82,11 @@ export const GlobalStyle = createGlobalStyle`
 
     .container{
         padding: 0px 64px;
+        position: relative;
+
+
+        @media (max-width: ${breakpoint.tablet}) {
+          padding: 0px 24px;
+  }
     }
 `;
