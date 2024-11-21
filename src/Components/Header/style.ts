@@ -1,5 +1,29 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { bodyMD, breakpoint, colors } from "../../assets/styles/global";
+
+const AnimationMenuMobile = keyframes`
+from {
+
+ transform: translateY(-500px);
+}
+
+to{
+  transform: translateY(0px);
+}
+`;
+
+const CloseMenu = keyframes`
+from {
+
+ opacity:1;
+display:flex;
+}
+
+to{
+  opacity: 0;
+  display: none;
+}
+`;
 
 export const HeaderNav = styled.header`
   display: flex;
@@ -22,6 +46,14 @@ export const Nav = styled.nav`
     position: absolute;
     top: 0;
     right: 0;
+    animation: ${CloseMenu} 1s;
+
+    display: none;
+  }
+
+  &.isOpen {
+    display: flex;
+    animation: ${AnimationMenuMobile} 1s;
   }
 `;
 
@@ -29,6 +61,11 @@ export const Menu = styled.ul`
   display: flex;
   gap: 32px;
   z-index: 1;
+
+  @media (min-width: ${breakpoint.desktop}) {
+    /* margin-right: 232px; */
+    margin-right: 15.4%;
+  }
 
   @media (max-width: ${breakpoint.tablet}) {
     width: 100%;

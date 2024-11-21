@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { bodySM, colors } from "../../assets/styles/global";
+import { bodySM, breakpoint, colors } from "../../assets/styles/global";
 
 export const ContainerTagSkill = styled.div`
   border: 2px solid ${colors.traditional500};
@@ -12,4 +12,8 @@ export const ContainerTagSkill = styled.div`
 
 export const TextTagskill = styled(bodySM)`
   font-weight: bold;
+
+  @media (max-width: ${breakpoint.tablet}) {
+    font-size: 12px;
+  }
 `;

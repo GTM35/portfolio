@@ -1,19 +1,32 @@
 import styled from "styled-components";
-import { bodyMD, headingXXL } from "../../assets/styles/global";
+import { bodyMD, breakpoint, headingXXL } from "../../assets/styles/global";
 
 export const ContainerAbout = styled.section`
-  margin-top: 144px;
-  margin-bottom: 200px;
+  margin: 144px 0;
+
+  @media (max-width: ${breakpoint.tablet}) {
+    margin: 0 0 90px 0;
+  }
 `;
 
 export const AboutWrapper = styled.div`
   display: flex;
   width: 100%;
   gap: 127px;
+
+  @media (max-width: ${breakpoint.tablet}) {
+    flex-direction: column;
+    gap: 32px;
+  }
 `;
 
 export const AboutTitle = styled(headingXXL)`
   font-weight: bold;
+
+  @media (max-width: ${breakpoint.tablet}) {
+    font-size: 23px;
+    margin-bottom: 48px;
+  }
 `;
 
 export const AboutInformation = styled.div`
@@ -24,11 +37,20 @@ export const AboutInformation = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media (max-width: ${breakpoint.tablet}) {
+    margin-top: 0;
+  }
 `;
 
-export const TextInformation = styled(bodyMD).attrs({ as: "p" })``;
+export const TextInformation = styled(bodyMD).attrs({ as: "p" })`
+  @media (max-width: ${breakpoint.tablet}) {
+    font-size: 14px;
+  }
+`;
 
 export const ContainerTag = styled.div`
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 `;

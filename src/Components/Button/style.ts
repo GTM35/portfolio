@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../assets/styles/global";
+import { breakpoint, colors } from "../../assets/styles/global";
 
 export const ButtonContainer = styled.a`
   font-family: "Roboto Mono", serif;
@@ -15,5 +15,9 @@ export const ButtonContainer = styled.a`
 
   &:hover {
     background-color: ${colors.modern500};
+  }
+
+  @media (max-width: ${breakpoint.tablet}) {
+    font-size: 14px;
   }
 `;

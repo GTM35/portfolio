@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoint } from "../../assets/styles/global";
 
 export const LineSeparator = styled.div`
   width: 100%;
@@ -10,4 +11,8 @@ export const LineSeparator = styled.div`
   );
 
   margin-bottom: 40px;
+
+  @media (max-width: ${breakpoint.tablet}) {
+    margin-bottom: 32px;
+  }
 `;

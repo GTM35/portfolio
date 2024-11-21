@@ -8,14 +8,19 @@ import {
   MenuMobile,
 } from "./style";
 import menuImage from "../../assets/images/menu-mobile.svg";
+import closeMenuImage from "../../assets/images/close-menu-mobile.svg";
 import Overlay from "../Overlay";
+import { useState } from "react";
 
 const Header = () => {
+  const [OpenMenuMobile, SetOpenMenuMobile] = useState(false);
+
   return (
     <>
       <HeaderNav>
         <Logo src="../../src/assets/images/logo.png" alt="LOGO" />
-        <Nav>
+
+        <Nav className={OpenMenuMobile ? "isOpen" : ""}>
           <Menu>
             <MenuItem>
               <MenuLink href="">Sobre</MenuLink>
@@ -32,11 +37,15 @@ const Header = () => {
           </Menu>
         </Nav>
 
-        <MenuMobile>
-          <img src={menuImage} alt="Menu mobile" />
+        <MenuMobile onClick={() => SetOpenMenuMobile(!OpenMenuMobile)}>
+          {OpenMenuMobile ? (
+            <img src={closeMenuImage} alt="Menu mobile" />
+          ) : (
+            <img src={menuImage} alt="Menu mobile" />
+          )}
         </MenuMobile>
       </HeaderNav>
-      <Overlay />
+      {OpenMenuMobile && <Overlay />}
     </>
   );
 };
