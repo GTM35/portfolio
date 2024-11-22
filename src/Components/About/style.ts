@@ -44,6 +44,8 @@ export const AboutInformation = styled.div`
 `;
 
 export const TextInformation = styled(bodyMD).attrs({ as: "p" })`
+  min-height: 144px;
+
   @media (max-width: ${breakpoint.tablet}) {
     font-size: 14px;
   }

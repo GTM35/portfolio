@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <>
       <Line />
-      <ProjectsTitle>Projetos</ProjectsTitle>
+      <ProjectsTitle id="Projects">Projetos</ProjectsTitle>
       <ContainerProject>
         <Project />
         <Project />

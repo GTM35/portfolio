@@ -12,6 +12,10 @@ import closeMenuImage from "../../assets/images/close-menu-mobile.svg";
 import Overlay from "../Overlay";
 import { useState } from "react";
 
+export type Props = {
+  menuOpen: boolean;
+};
+
 const Header = () => {
   const [OpenMenuMobile, SetOpenMenuMobile] = useState(false);
 
@@ -23,21 +27,30 @@ const Header = () => {
         <Nav className={OpenMenuMobile ? "isOpen" : ""}>
           <Menu>
             <MenuItem>
-              <MenuLink href="">Sobre</MenuLink>
+              <MenuLink href="#About">Sobre</MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink href="">Projetos</MenuLink>
+              <MenuLink href="#Projects">Projetos</MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink href="">Contato</MenuLink>
+              <MenuLink href="#Contacts">Contatos</MenuLink>
             </MenuItem>
             <MenuItem className="downloadCv">
-              <MenuLink href="">Download CV</MenuLink>
+              <MenuLink
+                href="../../src/assets/Curriculo-GustavoMazarello.pdf"
+                target="_blank"
+                onClick={() => SetOpenMenuMobile(!OpenMenuMobile)}
+              >
+                Download CV
+              </MenuLink>
             </MenuItem>
           </Menu>
         </Nav>
 
-        <MenuMobile onClick={() => SetOpenMenuMobile(!OpenMenuMobile)}>
+        <MenuMobile
+          onClick={() => SetOpenMenuMobile(!OpenMenuMobile)}
+          menuOpen={OpenMenuMobile}
+        >
           {OpenMenuMobile ? (
             <img src={closeMenuImage} alt="Menu mobile" />
           ) : (

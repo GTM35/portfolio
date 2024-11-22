@@ -11,44 +11,51 @@ import {
 
 const About = () => {
   return (
-    <ContainerAbout>
+    <ContainerAbout id="About">
       <Line />
       <AboutTitle>Sobre</AboutTitle>
 
       <AboutWrapper>
         <AboutInformation>
           <TextInformation>
-            Lorem ipsum dolor sit amet consectetur. Elit velit non nam amet id
-            netus eleifend aliquam. Tellus ut sed sodales aliquam bibendum
-            habitant aliquet scelerisque. Nisl condimentum faucibus aliquam
-            aliquam nunc tricies.
+            Formado em Análise e Desenvolvimento de Sistemas e atualmente
+            cursando Engenharia de Software, venho me especializando em
+            desenvolvimento web, com um forte compromisso em criar interfaces
+            funcionais e envolventes, utilizando as seguintes tecnologias:
           </TextInformation>
 
           <ContainerTag>
             <Tag text="HTML" />
+            <Tag text="GIT" />
             <Tag text="CSS" />
+            <Tag text="SASS" />
+            <Tag text="LESS" />
+            <Tag text="Styled-Components" />
             <Tag text="Javascript" />
-            <Tag text="Git" />
-            <Tag text="Grunt" />
-            <Tag text="Gulp" />
+            <Tag text="TypeScript" />
+            <Tag text="React" />
+            <Tag text="VueJS" />
+            <Tag text="Jest" />
           </ContainerTag>
         </AboutInformation>
 
         <AboutInformation>
           <TextInformation>
-            Lorem ipsum dolor sit amet consectetur. Elit velit non nam amet id
-            netus eleifend aliquam. Tellus ut sed sodales aliquam bibendum
-            habitant aliquet scelerisque. Nisl condimentum faucibus aliquam
-            aliquam nunc tricies.
+            Complementando minhas habilidades técnicas, destaco-me por ter um
+            perfil comportamental dinâmico, moldado durante 4 anos em que atuei
+            como Analista de Planejamento em Call center. Essa vivência me
+            permitiu aprimorar as seguintes habilidades essenciais para minha
+            carreira:
           </TextInformation>
 
           <ContainerTag>
-            <Tag text="HTML" />
-            <Tag text="CSS" />
-            <Tag text="Javascript" />
-            <Tag text="Git" />
-            <Tag text="Grunt" />
-            <Tag text="Gulp" />
+            <Tag text="Pensamento crítico" />
+            <Tag text="Resolução de problemas" />
+            <Tag text="Autogestão" />
+            <Tag text="Resiliência" />
+            <Tag text="Empatia" />
+            <Tag text="Relacionamento interpessoal" />
+            <Tag text="Trabalho em equipe" />
           </ContainerTag>
         </AboutInformation>
       </AboutWrapper>

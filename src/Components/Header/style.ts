@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { bodyMD, breakpoint, colors } from "../../assets/styles/global";
+import { Props } from ".";
 
 const AnimationMenuMobile = keyframes`
 from {
@@ -43,10 +44,10 @@ export const Nav = styled.nav`
 
   @media (max-width: ${breakpoint.tablet}) {
     background-color: red;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    animation: ${CloseMenu} 1s;
+    animation: ${CloseMenu} 0.5s;
 
     display: none;
   }
@@ -109,7 +110,7 @@ export const Logo = styled.img`
   }
 `;
 
-export const MenuMobile = styled.button`
+export const MenuMobile = styled.button<Props>`
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -120,5 +121,6 @@ export const MenuMobile = styled.button`
 
   @media (max-width: ${breakpoint.tablet}) {
     display: block;
+    position: ${(props) => props.menuOpen && "fixed"};
   }
 `;

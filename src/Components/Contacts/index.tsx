@@ -24,7 +24,7 @@ const Contacts = () => {
     <>
       <Line />
       <ContactsTitle>Contatos</ContactsTitle>
-      <ContainerContacts>
+      <ContainerContacts id="Contacts">
         <MainContacts>
           <Headline>
             Gostaria de falar sobre projetos, oportunidades ou trocar
@@ -35,19 +35,19 @@ const Contacts = () => {
               <IconSocials href="mailto:gustavotmsilva35@gmail.com">
                 <img src={iconEmail} alt="Ícone de E-mail" />
               </IconSocials>
-              <TextContact>email@email.com</TextContact>
+              <TextContact>gustavotmsilva35@gmail.com</TextContact>
             </Contact>
             <Contact>
-              <IconSocials href="">
+              <IconSocials href="https://wa.me/5511977800799" target="_blank">
                 <img src={IconWpp} alt="Ícone Whatsapp" />
               </IconSocials>
-              <TextContact>+55 11 99999-9999</TextContact>
+              <TextContact>+55 11 97780-0799</TextContact>
             </Contact>
             <Contact>
-              <IconSocials href="tel:+123456789">
+              <IconSocials href="tel:+5511977800799" target="_blank">
                 <img src={IconTel} alt="Ícone Telefone" />
               </IconSocials>
-              <TextContact>+55 11 99999-9999</TextContact>
+              <TextContact>+55 11 97780-0799</TextContact>
             </Contact>
           </ContactsGroup>
         </MainContacts>
@@ -58,17 +58,23 @@ const Contacts = () => {
           </Headline>
           <ContactsGroup>
             <Contact>
-              <IconSocials href="">
+              <IconSocials
+                href="https://www.linkedin.com/in/gtm035/"
+                target="_blank"
+              >
                 <img src={IconLinkedin} alt="Ícone Linkedin" />
               </IconSocials>
             </Contact>
             <Contact>
-              <IconSocials href="">
+              <IconSocials href="https://github.com/GTM35" target="_blank">
                 <img src={IconGithub} alt="Ícone Github" />
               </IconSocials>
             </Contact>
             <Contact>
-              <IconSocials href="">
+              <IconSocials
+                href="https://www.twitch.tv/gustavo_coder"
+                target="_blank"
+              >
                 <img src={IconTwitch} alt="Ícone Twitch" />
               </IconSocials>
             </Contact>
