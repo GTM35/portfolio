@@ -1,9 +1,11 @@
 import iconGit from "../../assets/images/icon-github.svg";
 import iconLinkedin from "../../assets/images/icon-linkedin.svg";
 import iconTwitch from "../../assets/images/icon-twitch.svg";
+
 import {
   CareerText,
   ContainerIcon,
+  HeadinglineContainer,
   HeroContainer,
   NameText,
   WelcomeText,
@@ -12,11 +14,11 @@ import {
 const Hero = () => {
   return (
     <HeroContainer>
-      <div>
+      <HeadinglineContainer>
         <WelcomeText>Olá, visitante!</WelcomeText>
         <NameText>Meu nome é Gustavo Mazarello</NameText>
         <CareerText>Desenvolvedor Front-end</CareerText>
-      </div>
+      </HeadinglineContainer>
 
       <ContainerIcon>
         <a href="https://github.com/GTM35" target="_blank">
