@@ -7,8 +7,9 @@ import {
   Logo,
   MenuMobile,
 } from "./style";
-import menuImage from "../../assets/images/menu-mobile.svg";
-import closeMenuImage from "../../assets/images/close-menu-mobile.svg";
+import menuImage from "/images/menu-mobile.svg";
+import closeMenuImage from "/images/close-menu-mobile.svg";
+import logo from "/images/logo.png";
 import Overlay from "../Overlay";
 import { useState } from "react";
 
@@ -22,7 +23,7 @@ const Header = () => {
   return (
     <>
       <HeaderNav>
-        <Logo src="../../src/assets/images/logo.png" alt="LOGO" />
+        <Logo src={logo} alt="LOGO" />
 
         <Nav className={OpenMenuMobile ? "isOpen" : ""}>
           <Menu>
@@ -37,7 +38,7 @@ const Header = () => {
             </MenuItem>
             <MenuItem className="downloadCv">
               <MenuLink
-                href="../../src/assets/Curriculo-GustavoMazarello.pdf"
+                href="/Curriculo-GustavoMazarello.pdf"
                 target="_blank"
                 onClick={() => SetOpenMenuMobile(!OpenMenuMobile)}
               >

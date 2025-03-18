@@ -70,7 +70,7 @@ export const ContainerIcon = styled.div`
     gap: 24px;
 
     img {
-      width: 24px;
+      width: 30px;
     }
   }
 `;

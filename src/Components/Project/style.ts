@@ -26,11 +26,13 @@ export const ContainerSkills = styled.div`
   gap: 16px;
   width: 100%;
   flex-wrap: wrap;
+  min-height: 5.125rem;
 `;
 
 export const CoverProject = styled.img`
   width: 100%;
   max-width: 315px;
+  max-height: 229px;
   border-radius: 8px;
 
   @media (max-width: ${breakpoint.tablet}) {

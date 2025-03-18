@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <TextFooter>
-        © 2024 Gustavo Teofilo. Todos os direitos reservados.
+        © 2025 Gustavo Mazarello. Todos os direitos reservados.
       </TextFooter>
     </FooterContainer>
   );

@@ -7,30 +7,40 @@ import {
   TextDescription,
   TitleProject,
 } from "./style";
-import imageProject from "../../assets/images/cover-project.png";
 import Button from "../Button";
 
-const Project = () => {
+interface Props {
+  ImageProject: string;
+  titleProject: string;
+  stack: string[];
+  deploy: string;
+  github: string;
+  description: string;
+}
+
+const Project = ({
+  ImageProject,
+  titleProject,
+  stack,
+  deploy,
+  github,
+  description,
+}: Props) => {
   return (
     <ContainerProject>
-      <TitleProject>Título</TitleProject>
-      <CoverProject src={imageProject} alt="" />
+      <TitleProject>{titleProject}</TitleProject>
+      <CoverProject src={ImageProject} alt="" />
       <ContainerSkills>
-        <TagSkills>HTML</TagSkills>
-        <TagSkills>HTML</TagSkills>
-        <TagSkills>HTML</TagSkills>
-        <TagSkills>HTML</TagSkills>
-        <TagSkills>HTML</TagSkills>
+        {stack.map((item) => (
+          <TagSkills>{item}</TagSkills>
+        ))}
       </ContainerSkills>
 
-      <TextDescription>
-        Lorem ipsum dolor sit amet consectetur. Sit nec pretium turpis eget nisi
-        in. Sit in lobortis est urna dictum molestie nisl id.
-      </TextDescription>
+      <TextDescription>{description}</TextDescription>
 
       <ContainerButtons>
-        <Button>Github</Button>
-        <Button>Deploy</Button>
+        <Button link={github}>Github</Button>
+        <Button link={deploy}>Deploy</Button>
       </ContainerButtons>
     </ContainerProject>
   );

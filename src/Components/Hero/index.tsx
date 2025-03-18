@@ -1,6 +1,6 @@
-import iconGit from "../../assets/images/icon-github.svg";
-import iconLinkedin from "../../assets/images/icon-linkedin.svg";
-import iconTwitch from "../../assets/images/icon-twitch.svg";
+import iconGit from "/images/icon-github.svg";
+import iconLinkedin from "/images/icon-linkedin.svg";
+import iconTwitch from "/images/icon-twitch.svg";
 
 import {
   CareerText,

@@ -2,13 +2,14 @@ import { ButtonContainer } from "./style";
 
 type Props = {
   children: string;
+  link: string;
 };
 
-const Button = ({ children }: Props) => {
+const Button = ({ children, link }: Props) => {
   return (
-    <>
-      <ButtonContainer>{children}</ButtonContainer>
-    </>
+    <ButtonContainer href={link} target="_blank">
+      {children}
+    </ButtonContainer>
   );
 };
 

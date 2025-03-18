@@ -8,6 +8,7 @@ export const ContainerTagSkill = styled.div`
   align-items: center;
   padding: 4px 8px;
   border-radius: 4px;
+  height: fit-content;
 `;
 
 export const TextTagskill = styled(bodySM)`

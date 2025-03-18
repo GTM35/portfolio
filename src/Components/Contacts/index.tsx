@@ -11,13 +11,13 @@ import {
   TextContact,
 } from "./style";
 
-import iconEmail from "../../assets/images/icon-email.svg";
-import IconTel from "../../assets/images/icon-tel.svg";
-import IconWpp from "../../assets/images/icon-wpp.svg";
+import iconEmail from "/images/icon-email.svg";
+import IconTel from "/images/icon-tel.svg";
+import IconWpp from "/images/icon-wpp.svg";
 
-import IconLinkedin from "../../assets/images/icon-linkedin.svg";
-import IconTwitch from "../../assets/images/icon-twitch.svg";
-import IconGithub from "../../assets/images/icon-github.svg";
+import IconLinkedin from "/images/icon-linkedin.svg";
+import IconTwitch from "/images/icon-twitch.svg";
+import IconGithub from "/images/icon-github.svg";
 
 const Contacts = () => {
   return (

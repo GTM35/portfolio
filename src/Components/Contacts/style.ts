@@ -77,8 +77,8 @@ export const IconSocials = styled.a`
   }
 
   @media (max-width: ${breakpoint.tablet}) {
-    width: 22px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
 
     img {
       width: 100%;
